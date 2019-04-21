@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" type="text/css">
-    <title>{{ name }}'s Washlist</title>
+    <title>{{ name.name }}'s Washlist</title>
 </head>
 <body>
 <h2><img class="avatar" src="{{ url_for('static',filename='images/avatar.png') }}" alt="">
-    {{ name }}'s Watchlist
+    {{ name.name }}'s Watchlist
 </h2>
 
 {# 使用lenght过滤器获取movies变量的长度 #}
